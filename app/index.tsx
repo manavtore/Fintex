@@ -10,7 +10,9 @@ import Colors from '@/constants/Colors';
 
 const page = () => {
     const [assets] = useAssets([require('../assets/video/splashvideo.mp4')]);
+
   return (
+    
    <View style={styles.Container}>
       {assets && (
         <Video
@@ -28,7 +30,7 @@ const page = () => {
         <View>
          <View style = {styles.buttons}>
         <Link 
-            href={'/app/login.tsx'}
+            href={'/login'}
             style={[defaultStyles.smallButton, { flex: 1, backgroundColor: Colors.dark }]}
             asChild
           >
@@ -40,7 +42,7 @@ const page = () => {
       </View>
       <View style = {styles.buttons}>
         <Link 
-            href={'/app/signup.tsx'}
+            href={'/signup'}
             style={[defaultStyles.smallButton, { flex: 1, backgroundColor: Colors.dark }]}
             asChild
           >
